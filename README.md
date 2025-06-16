@@ -43,13 +43,13 @@ GO-KMS-CLI is a command line interface which can be used to manage and interact 
 To run get the project...
 
 ```
-go get github.com/keithballdotnet/go-kms
+go mod init github.com/keithballdotnet/go-kms
 ```
 
 The dependencies are in the vendor folder already, but should you want to you can run ...
 
 ```
-dep ensure
+go mod tidy
 ```
 
 You need to set the following variables:
@@ -58,7 +58,7 @@ You need to set the following variables:
 export GOKMS_AUTH_KEY=/path/to/auth.key
 export GOKMS_CRYPTO_PROVIDER= hsm | gokms
 export GOKMS_HOST=localhost
-export GOKMS_PORT=8020
+export GOKMS_PORT=8011
 export GOKMS_SSL_CERT=/path/to/ssl_cert.pem
 export GOKMS_SSL_KEY=/path/to/ssl_key.pem
 ```

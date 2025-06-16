@@ -7,6 +7,15 @@ Go port of Coda Hale's Metrics library: <https://github.com/dropwizard/metrics>.
 
 Documentation: <http://godoc.org/github.com/rcrowley/go-metrics>.
 
+Archived as of April 1 2025
+-----
+This repository is no longer maintained. The authors recommend you explore the
+following newer, more widely adopted libraries for your Go instrumentation
+needs:
+
+* [OpenTelemetry Go SDK](https://opentelemetry.io/docs/languages/go/instrumentation/#metrics)
+* [Prometheus Go Client Library](https://pkg.go.dev/github.com/prometheus/client_golang/prometheus)
+
 Usage
 -----
 
@@ -157,6 +166,7 @@ Publishing Metrics
 
 Clients are available for the following destinations:
 
+* AppOptics - https://github.com/ysamlan/go-metrics-appoptics
 * Librato - https://github.com/mihasya/go-metrics-librato
 * Graphite - https://github.com/cyberdelia/go-metrics-graphite
 * InfluxDB - https://github.com/vrischmann/go-metrics-influxdb
@@ -166,3 +176,5 @@ Clients are available for the following destinations:
 * SignalFX - https://github.com/pascallouisperez/go-metrics-signalfx
 * Honeycomb - https://github.com/getspine/go-metrics-honeycomb
 * Wavefront - https://github.com/wavefrontHQ/go-metrics-wavefront
+* Open-Falcon - https://github.com/g4zhuj/go-metrics-falcon
+* AWS CloudWatch - [https://github.com/savaki/cloudmetrics](https://github.com/savaki/cloudmetrics)
